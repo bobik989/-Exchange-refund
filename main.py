@@ -24,4 +24,4 @@ while dif > 0:
         fin_dif.append(money[0])
         break
 
-print(f'Ваша сдача должна составлять {dif} \n по мелким начилным это: {fin_dif}')
+print(f'Ваша сдача должна составлять {difa} \n по мелким начилным это: {fin_dif}')
