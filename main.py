@@ -7,15 +7,15 @@ difa = user_money - product_money
 dif = difa
 while dif > 0:
 
-    if dif > money[3]:
+    if dif >= money[3]:
         dif -= 10
         fin_dif.append(money[3])
 
-    elif dif > money[2]:
+    elif dif >= money[2]:
         dif -= 5
         fin_dif.append(money[2])
 
-    elif dif > money[1]:
+    elif dif >= money[1]:
         dif -= 2
         fin_dif.append(money[1])
 
