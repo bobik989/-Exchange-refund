@@ -5,6 +5,7 @@ fin_dif = []
 
 difa = user_money - product_money
 dif = difa
+
 while dif > 0:
     if dif >= money[9]:
         dif -= 5000
@@ -41,7 +42,7 @@ while dif > 0:
     elif dif >= money[1]:
         dif -= 2
         fin_dif.append(money[1])
-        
+
     elif dif >= money[0]:
         dif -= 1
         fin_dif.append(money[0])
