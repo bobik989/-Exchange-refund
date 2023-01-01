@@ -7,7 +7,7 @@ win.resizable(True, False)
 
 dif = 0
 fin_dif = []
-money = [1, 2, 5, 10, 50, 100, 200, 500, 1000, 2000, 5000]
+money = [5000, 2000, 1000, 500, 200, 100, 50, 10, 5, 2, 1]
 
 def fun():
     fin_dif = []
@@ -15,51 +15,13 @@ def fun():
     product = int(products_money.get())
     dif =  product - user #хз почему так
     txt3.configure(text= f'Ваша сдача должна быть: {dif}')
+
     while dif > 0:
-        if dif >= money[10]:
-            dif -= 5000
-            fin_dif.append(money[10])
-
-        elif dif >= money[9]:
-            dif -= 2000
-            fin_dif.append(money[9])
-
-        elif dif >= money[8]:
-            dif -= 1000
-            fin_dif.append(money[8])
-
-        elif dif >= money[7]:
-            dif -= 500
-            fin_dif.append(money[7])
-
-        elif dif >= money[6]:
-            dif -= 200
-            fin_dif.append(money[6])
-
-        elif dif >= money[5]:
-            dif -= 100
-            fin_dif.append(money[5])
-
-        elif dif >= money[4]:
-            dif -= 50
-            fin_dif.append(money[4])
-
-        elif dif >= money[3]:
-            dif -= 10
-            fin_dif.append(money[3])
-
-        elif dif >= money[2]:
-            dif -= 5
-            fin_dif.append(money[2])
-
-        elif dif >= money[1]:
-            dif -= 2
-            fin_dif.append(money[1])
-
-        elif dif >= money[0]:
-            dif -= 1
-            fin_dif.append(money[0])
-            break
+            for i in range(len(money)):
+                while dif >= money[i]:
+                    if dif >= money[i]:
+                        dif -= money[i]
+                        fin_dif.append(money[i])
 
     txt4.configure(text= f'По наличным это: {fin_dif}')
 
