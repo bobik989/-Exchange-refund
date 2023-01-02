@@ -17,10 +17,10 @@ def fun():
     txt3.configure(text= f'Ваша сдача должна быть: {dif}')
 
     while dif > 0:
-            for i in range(len(money)):
-                while dif >= money[i]:
-                    dif -= money[i]
-                    fin_dif.append(money[i])
+        for i in range(len(money)):
+            while dif >= money[i]:
+                dif -= money[i]
+                fin_dif.append(money[i])
 
     txt4.configure(text= f'По наличным это: {fin_dif}')
 
