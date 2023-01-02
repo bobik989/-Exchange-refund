@@ -9,9 +9,8 @@ dif = difa
 while dif > 0:
         for i in range(len(money)):
             while dif >= money[i]:
-                if dif >= money[i]:
-                    dif -= money[i]
-                    fin_dif.append(money[i])
+                dif -= money[i]
+                fin_dif.append(money[i])
 
 print(f'Ваша сдача должна составлять {difa} \nПо начилным это:')
 print(*fin_dif, sep=', ')
